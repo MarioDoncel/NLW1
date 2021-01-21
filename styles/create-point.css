@@ -106,3 +106,40 @@ form button {
 form button:hover {
     background-color: rgb(4, 73, 4);
 }
+
+.itens-grid {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.itens-grid li {
+    background-color: #d3d3fa;
+    list-style: none;
+    border: 2px solid #d3d3fa;
+    height: 180px;
+    border-radius: 8px;
+    padding: 32px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+}
+
+.itens-grid li span {
+    margin-top: 10px;
+    flex:1;
+    display: flex;
+    align-items: center;
+}
+
+.itens-grid li.selected {
+    background-color: #9e9ed1;
+    border: 4px solid var(--primary-color);
+}
+
+.itens-grid li img, .itens-grid li span {
+    pointer-events: none;
+}
