@@ -1,0 +1,108 @@
+#create-point {
+    width: 90vw;
+    height: 90vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#create-point header {
+    display: flex;
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#create-point header a {
+    display: flex;
+    color: var(--title-color);
+    font-weight: 900;
+}
+
+#create-point header a span {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(180deg);
+}
+
+form {
+    background-color: white;
+    opacity: 0.7;
+    margin: 80px auto;
+    padding: 64px;
+    box-sizing: border-box;
+    max-width: 75vw;
+    border-radius: 8px;
+}
+
+form h1 {
+    font-size: 36px;
+}
+
+form fieldset {
+    margin-top: 64px;
+    border: 0;
+}
+
+form legend {
+    margin-bottom: 40px;
+}
+
+form legend h2 {
+    font-size: 24px;
+}
+
+form .field {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+form .fieldgroup {
+    display: flex;
+
+}
+
+form input, form select {
+    background-color: #d3d3fa;
+    border: 0px;
+    padding: 16px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+form .fieldgroup .field + .field {
+    margin-left: 10px;
+}
+
+form button {
+    width: 260px;
+    height: 56px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0px;
+    margin-top: 10px;
+    transition: 500ms;
+}
+
+form button:hover {
+    background-color: rgb(4, 73, 4);
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="/NLW/styles/main.css">
+    <link rel="stylesheet" href="/NLW/styles/create-point.css">
+    <link rel="stylesheet" href="/NLW/styles/responsive.css">
+
+
+
+    <title>Criar um ponto de coleta</title>
+</head>
+<body>
+    
+    <div id="create-point">
+        <header>
+            <img src="../NLW/assets/logo.png" alt="Logo">
+            <a href="">
+                <span><img src="../NLW/assets/seta-direita.svg" alt=""></span>
+                Voltar para home
+            </a> 
+        </header>
+
+        <form action="">
+            <h1>Cadastro do ponto de coleta</h1>
+            <fieldset>
+                <legend><h2>Dados da entidade</h2></legend>
+                <div class="field">
+                    <label for="name">Nome da entidade</label>
+                    <input name="name" type="text">
+                </div>
+                <div class="fieldgroup">
+                    <div class="field">
+                        <label for="address">Endereço</label>
+                        <input  name="address" type="text">
+                    </div>
+                    <div class="field">
+                        <label for="addressNumber">Numero/Complemento</label>
+                        <input  name="addressNumber" type="text">
+                    </div>
+                </div>
+                <div class="fieldgroup">
+                    <div class="field">
+                        <label for="estate">Estado</label>
+                        <select name="state">
+                            <option value="">Selecione o Estado</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="city">Cidade</label>
+                        <select name="city" disabled>
+                            <option value="">Selecione a Cidade</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><h2>Itens de coleta</h2></legend>
+            </fieldset>
+            <button type="submit">Cadastrar ponto de coleta</button>
+        </form>
+    
+    </div>
+   
+    <script src="/NLW/scripts/create-point.js"></script>
+</body>
+</html>

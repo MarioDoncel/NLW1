@@ -1,0 +1,50 @@
+@media (max-width:900px) {
+
+    #page-home {
+        background-position-x: 700vw;
+    }
+
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+    
+    #page-home header {
+        display: flex;
+        margin-top: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #page-home header a {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-bottom: 20px;
+    }
+
+    #page-home main {
+        align-items: center;
+    }
+    #page-home main a   {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:450px) {
+    #page-home header a {
+        bottom: 0px;
+        padding-bottom: 10px
+        ;
+    }
+
+    #page-home header img {
+        max-height: 10vh;
+    }
+
+    #page-home main h1 {
+        font-size: 35px;
+    }
+}
