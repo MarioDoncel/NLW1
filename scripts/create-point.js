@@ -46,7 +46,7 @@
     //Itens de coleta
 
     let selectedItens = []
-    const collectedItems = document.querySelector("input[name=itens")
+    const collectedItems = document.querySelector("input[name=itens]")
 
     function handleSelectedItem(event) {
         const itemLi = event.target

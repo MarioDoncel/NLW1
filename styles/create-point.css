@@ -133,6 +133,7 @@ form button:hover {
     flex:1;
     display: flex;
     align-items: center;
+    color: var(--title-color);
 }
 
 .itens-grid li.selected {
