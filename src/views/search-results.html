@@ -6,9 +6,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="/NLW/styles/main.css">
-    <link rel="stylesheet" href="/NLW/styles/search-results.css">
-    <link rel="stylesheet" href="/NLW/styles/responsive.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/search-results.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
 
 
 
@@ -17,13 +17,7 @@
 <body>
     
     <div id="page-search-results">
-        <header>
-            <img src="../NLW/assets/logo.png" alt="Logo">
-            <a href="/NLW/index.html">
-                <span><img src="../NLW/assets/seta-direita.svg" alt=""></span>
-                Voltar para home
-            </a> 
-        </header>
+        {% include "partials/page-header.html"%}
         <main>
             <h4>
                 <strong>2 pontos </strong> encontrados
@@ -54,6 +48,6 @@
     
     </div> 
    
-    <script src="/NLW/scripts/search-results.js"></script>
+    <script src="/scripts/search-results.js"></script>
 </body>
 </html>

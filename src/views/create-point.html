@@ -6,24 +6,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="/NLW/styles/main.css">
-    <link rel="stylesheet" href="/NLW/styles/create-point.css">
-    <link rel="stylesheet" href="/NLW/styles/responsive.css">
-
-
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/create-point.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
 
     <title>Criar um ponto de coleta</title>
 </head>
 <body>
     
     <div id="create-point">
-        <header>
-            <img src="../NLW/assets/logo.png" alt="Logo">
-            <a href="/NLW/index.html">
-                <span><img src="../NLW/assets/seta-direita.svg" alt=""></span>
-                Voltar para home
-            </a> 
-        </header>
+        
+        {% include "partials/page-header.html"%}
 
         <form action="">
             <h1>Cadastro do ponto de coleta</h1>
@@ -66,27 +59,27 @@
 
                 <div class="itens-grid">
                     <li data-id="1" class="selected">
-                        <img src="/NLW/assets/lampadas.svg" alt="Lampadas">
+                        <img src="/assets/lampadas.svg" alt="Lampadas">
                         <span>Lampadas</span>
                     </li>
                     <li data-id="2">
-                        <img src="/NLW/assets/lampadas.svg" alt="Pilhas e Baterias">
+                        <img src="/assets/lampadas.svg" alt="Pilhas e Baterias">
                         <span>Pilhas e Baterias</span>
                     </li>
                     <li data-id="3">
-                        <img src="/NLW/assets/lampadas.svg" alt="Papéis e Papelão">
+                        <img src="/assets/lampadas.svg" alt="Papéis e Papelão">
                         <span>Papéis e Papelão</span>
                     </li>
                     <li data-id="4">
-                        <img src="/NLW/assets/lampadas.svg" alt="Resíduos Eletrônicos">
+                        <img src="/assets/lampadas.svg" alt="Resíduos Eletrônicos">
                         <span>Resíduos Eletrônicos</span>
                     </li>
                     <li data-id="5">
-                        <img src="/NLW/assets/lampadas.svg" alt="Resíduos Orgânicos">
+                        <img src="/assets/lampadas.svg" alt="Resíduos Orgânicos">
                         <span>Resíduos Orgânicos</span>
                     </li>
                     <li data-id="6">
-                        <img src="/NLW/assets/lampadas.svg" alt="Óleo de Cozinha">
+                        <img src="/assets/lampadas.svg" alt="Óleo de Cozinha">
                         <span>Óleo de Cozinha</span>
                     </li>
                 </div>
@@ -97,6 +90,6 @@
     
     </div> 
    
-    <script src="/NLW/scripts/create-point.js"></script>
+    <script src="/scripts/create-point.js"></script>
 </body>
 </html>
