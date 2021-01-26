@@ -1,23 +1,17 @@
-<!DOCTYPE html>
-<html lang="pt_br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="/styles/main.css">
+{% extends "layout.html"%}
+
+{% set pageId = "page-search-results" %}
+
+{% block styles %}
     <link rel="stylesheet" href="/styles/search-results.css">
-    <link rel="stylesheet" href="/styles/responsive.css">
+{% endblock styles %}   
 
+{% block title %}
+     <title>Resultado da pesquisa</title>
+{% endblock title %}   
 
-
-    <title>Resultado da pesquisa</title>
-</head>
-<body>
-    
-    <div id="page-search-results">
-        {% include "partials/page-header.html"%}
+{% block content %}
+     {% include "partials/page-header.html"%}
         <main>
             <h4>
                 <strong>2 pontos </strong> encontrados
@@ -45,9 +39,8 @@
                 </div>
             </div>
         </main>
-    
-    </div> 
-   
+{% endblock content %}
+        
+{% block scripts %}
     <script src="/scripts/search-results.js"></script>
-</body>
-</html>
+{% endblock scripts %} 
