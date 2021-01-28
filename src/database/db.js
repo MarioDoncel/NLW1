@@ -6,7 +6,7 @@ const db = new sqlite3.Database("./src/database/database.db")
 
 module.exports = db
 //Utiliza o objeto de banco de dados para nossas operações
-/*
+
 db.serialize(() => {
 
     //Com comandos SQL eu vou:
@@ -24,7 +24,7 @@ db.serialize(() => {
         );
     `)
 
-    // 2 inserir dados na tabela
+    /*// 2 inserir dados na tabela
     const query = `
         INSERT INTO places (
             image,
@@ -56,7 +56,7 @@ db.serialize(() => {
     }
 
     //db.run(query, values, afterInsertData)
-
+*/
     // 3 consultar dados da tabela
     db.all(`SELECT * FROM places`, function (err, rows) {
         if(err) {
@@ -67,15 +67,15 @@ db.serialize(() => {
         console.log(rows)
     })
 
-    // 4 deletar dado da tabela
+     //4 deletar dado da tabela
     /*
-    db.run(`DELETE FROM places WHERE id = ?`, [1],function (err) {
+    db.run(`DELETE FROM places WHERE id = ?`, [5],function (err) {
         if(err) {
             return console.log(err)
-        }
+       }
         console.log("Registro deletado com sucesso ")
-    })
-    
+   })
+    */
 
     
-})*/
+})

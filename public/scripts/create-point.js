@@ -1,5 +1,5 @@
     function populateUFs() {
-        const ufSelect = document.querySelector("select[name=state]")
+        const ufSelect = document.querySelector("select[name=uf]")
 
         fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
         .then( res => res.json() )
@@ -39,14 +39,14 @@
 
 
     document
-    .querySelector("select[name=state]")
+    .querySelector("select[name=uf]")
     .addEventListener("change", getCities)
 
 
     //Itens de coleta
 
     let selectedItens = []
-    const collectedItems = document.querySelector("input[name=itens]")
+    const collectedItems = document.querySelector("input[name=items]")
 
     function handleSelectedItem(event) {
         const itemLi = event.target
