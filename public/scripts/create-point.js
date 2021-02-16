@@ -25,7 +25,7 @@
 
         citySelect.innerHTML = "<option value>Selecione a cidade</option>"
         citySelect.disabled = true
-
+        
         fetch(url)
         .then( res => res.json() )
         .then( cities => {
