@@ -1,5 +1,6 @@
 # NLW1
 Next Level Week ROCKETSEAT - ECOLETA (sem acesso aos assets originais)
+![GitHub](https://img.shields.io/github/license/MarioDoncel/NLW1?logoColor=yes)
 <div id="top"></div>
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
