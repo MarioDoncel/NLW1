@@ -26,8 +26,8 @@ https://img.shields.io/github/license/MarioDoncel/NLW1?logoColor=da
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![MIT License][license-shield]][https://github.com/MarioDoncel/NLW1/blob/master/LICENSE]
+[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/marioadoncel/]
 
 
 
