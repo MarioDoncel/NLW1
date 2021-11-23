@@ -30,6 +30,8 @@ Project developed at the first edition of the "<a href="https://www.rocketseat.c
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#status">Status</a></li>
       </ul>
     </li>
     <li>
@@ -80,6 +82,15 @@ Each collection point has the following information:
  -->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+### Objective
+
+Project developed just for educacional purposes.
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+### Status
+
+Finished.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
