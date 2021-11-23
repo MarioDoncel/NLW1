@@ -129,6 +129,30 @@ To get a local copy up and running follow these simple example steps.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+<div>
+  <p>Index Page - Here you have the option to create a new collect point or search for an existing point.</p>
+  <img src="public/assets/readmeImages/EcoletaIndex.png" width="500px">
+</div>
+<br>
+<div>
+  <p>Create Point Page - Here you need to fill all the inputs and select at least one type of material to collect, then you can create a collect point.</p>
+  <img src="public/assets/readmeImages/CreatePoint.png" width="500px">
+</div>
+<br>
+<div>
+  <p>Create Success Modal - After creating a point, if it is everything alright this modal will show up for 3 seconds (timeout).</p>
+  <img src="public/assets/readmeImages/CreateSucces.png" width="500px">
+</div>
+<br>
+<div>
+  <p>Search Field Modal - Here you can fill the input with the name of the city where you are looking for collecting points.</p>
+  <img src="public/assets/readmeImages/SearchField.png" width="500px">
+</div>
+<br>
+<div>
+  <p>Search Results Page - This page will show all the collection points that exists in the city you are searching for.</p>
+  <img src="public/assets/readmeImages/SearchResults.png" width="500px">
+</div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
