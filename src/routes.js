@@ -62,7 +62,7 @@ routes.get("/search-results", async (req, res) => {
     try {
         const places = await db.all(`SELECT * FROM places WHERE city LIKE '%${search}%'`)
         const total = places.length
-        console.log(places)
+        
         return res.render("search-results.html", {places, total}) 
     } catch (error) {
         console.log(error)
