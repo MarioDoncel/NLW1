@@ -52,7 +52,7 @@ Project developed at the first edition of the "<a href="https://www.rocketseat.c
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Application developed allows the registration and search of collection points for recyclable material filtered by city.
+Responsive application developed allows the registration and search of collection points for recyclable material filtered by city.
 The search returns all the points registered in the researched city.
 Each collection point has the following information:
 - Name
