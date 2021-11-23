@@ -2,9 +2,8 @@
 <h1>ECOLETA</h1> <br>
 <!-- PROJECT LOGO -->
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="public/assets/Logo.png" alt="Logo" width="300px">
-  </a><br>
+  <br>
 Project developed at the first edition of the "<a href="https://www.rocketseat.com.br/">Rocketseat</a> - Next Level Week"  event. 
 <div id="top"></div>
 </div><br>  
