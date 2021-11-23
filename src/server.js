@@ -1,8 +1,11 @@
-const express = require("express")
+import  express  from "express"
+import db from "./database/db.js"
+import nunjucks from 'nunjucks'
+import routes from "./routes.js"
+
 const server = express()
 
-//pegar o banco de dodos
-const db =  require("./database/db")
+
 
 //configurar pasta public
 server.use(express.static("public"))
@@ -10,9 +13,7 @@ server.use(express.static("public"))
 // habilitar o uso do req.body da nossa aplicação
 server.use(express.urlencoded({extended: true}))
 
-
 //utilizando template engine
-const nunjucks =  require("nunjucks")
 nunjucks.configure("src/views", {
     express: server,
     noCache: true,
@@ -23,88 +24,9 @@ nunjucks.configure("src/views", {
 //pagina inicial
 //req: é uma requisição 
 //res: é uma resposta
-server.get("/", (req, res) => {
-    return res.render("index.html") 
-})
-
-server.get("/create-point", (req, res) => {
-
-    //req.query - Query Strings da  nossa URL
-    //console.log(req.query)
-
-    return res.render("create-point.html") 
-})
-
-server.post("/save-point", (req, res) => {
-
-    //req.body: o corpo do nosso formulario
-    //console.log(req.body)
-
-    //inserir dados no banco de dados 
-    const query = `
-        INSERT INTO places (
-            image,
-            name,
-            address,
-            address2,
-            state,
-            city,
-            items
-        ) VALUES (?,?,?,?,?,?,?);
-    `
-
-    const values = [
-        req.body.image,
-        req.body.name,
-        req.body.address,
-        req.body.address2,
-        req.body.state,
-        req.body.city,
-        req.body.items
-
-    ]
-
-    function afterInsertData(err) {
-        if(err) {
-            console.log(err)
-            return res.send("Erro no cadastro!")
-        }
-        console.log("Cadastrado com sucesso")
-        console.log(this)
-
-        return res.render("create-point.html", {saved: true})
-    }
-
-    db.run(query, values, afterInsertData)
-     
-})
-
-
-server.get("/search-results", (req, res) => {
-
-    const search = req.query.search
-
-    if(search == ""){
-        //pesquisa vazia
-        return res.render("search-results.html", {total:0}) 
-    }
-
-    //pegar os addos do banco de dodos
-    db.all(`SELECT * FROM places WHERE city LIKE '%${search}%'`, function (err, rows) {
-        if(err) {
-            return console.log(err)
-        }
-
-        const total = rows.length
-
-        // mostrar a pagina html com os dados do banco de dados
-        return res.render("search-results.html", {places: rows, total}) 
-    })
-
-    
-})
+server.use(routes)
 
 
 
 // ligar o servidor
-server.listen(3000)
+server.listen(3000, () => console.log('Active on port 3000'))

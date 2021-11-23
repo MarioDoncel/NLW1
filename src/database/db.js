@@ -1,10 +1,10 @@
 // importar a dependencia do sqlite3
-const sqlite3 = require("sqlite3").verbose()
+import  sqlite3 from "sqlite3"
 
 //iniciar o objeto que irá fazer operaçõe sno banco de cadas
 const db = new sqlite3.Database("./src/database/database.db")
 
-module.exports = db
+export default db
 //Utiliza o objeto de banco de dados para nossas operações
 
 db.serialize(() => {
@@ -58,14 +58,12 @@ db.serialize(() => {
     //db.run(query, values, afterInsertData)
 */
     // 3 consultar dados da tabela
-    db.all(`SELECT * FROM places`, function (err, rows) {
-        if(err) {
-            return console.log(err)
-        }
+    // db.all(`SELECT * FROM places`, function (err, rows) {
+    //     if(err) {
+    //         return console.log(err)
+    //     }
 
-        console.log("Aqui estão seus registros: ")
-        console.log(rows)
-    })
+    // })
 
      //4 deletar dado da tabela
     /*
