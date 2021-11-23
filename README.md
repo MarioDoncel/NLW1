@@ -65,6 +65,9 @@ Each collection point has the following information:
 
 <!-- This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples. -->
 
+* HTML
+* CSS
+* Javascript
 * [Node.js](https://nodejs.org/)
 * [Express.js (server)](https://expressjs.com/)
 * [SQLite (database)](https://www.sqlite.org/)
